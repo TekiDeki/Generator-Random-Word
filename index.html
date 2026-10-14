@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
+<!-- SPDX-License-Identifier: Apache-2.0
+Copyright 2026 Kristian Mario Mišković (TekiDeki).
+Modified 2026-10-14: translated donation link and copyright/source/license footer. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -499,6 +502,28 @@
                 padding: 14px 6px 16px 6px;
             }
         }
+
+        /* TekiDeki support and credits · 2026-10-14 */
+        .tekideki-support {
+            margin-top: 28px; padding-top: 24px;
+            border-top: 1px solid rgba(148, 163, 184, .25);
+            text-align: center;
+        }
+        .tekideki-donate {
+            display: inline-flex; align-items: center; justify-content: center;
+            max-width: 100%; min-height: 48px; padding: 12px 24px;
+            border-radius: 999px; background: #ffc439; color: #1b1b1b;
+            font-size: 15px; font-weight: 700; text-decoration: none;
+            box-shadow: 0 4px 16px rgba(255, 196, 57, .18);
+        }
+        .tekideki-donate:hover { background: #ffd166; }
+        .tekideki-credits {
+            display: flex; justify-content: center; align-items: center;
+            flex-wrap: wrap; gap: 0 6px; padding-top: 18px;
+            color: #cbd5e1; font-size: 12px; line-height: 1.9;
+        }
+        .tekideki-credits a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+        .tekideki-support a:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 4px; border-radius: 3px; }
     </style>
 </head>
 <body>
@@ -566,6 +591,17 @@
                 <div class="empty-history" id="emptyHistoryText">No words generated yet...</div>
             </div>
         </div>
+
+        <footer class="tekideki-support" id="tekideki-support">
+            <a class="tekideki-donate" id="tekideki-donate" href="https://paypal.me/TekiDeki" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee?</a>
+            <div class="tekideki-credits">
+                <span>© 2026 <a href="https://github.com/TekiDeki" target="_blank" rel="noopener noreferrer">TekiDeki</a></span>
+                <span aria-hidden="true">·</span>
+                <a id="tekideki-source" href="https://github.com/TekiDeki/Generator-Random-Word" target="_blank" rel="noopener noreferrer">Source code</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://tekideki.github.io/Generator-Random-Word/LICENSE" target="_blank" rel="noopener noreferrer">Apache-2.0</a>
+            </div>
+        </footer>
     </div>
 
     <script>
@@ -1733,7 +1769,13 @@
                 });
             }
 
+            const supportTranslations = {"en": {"donate": "☕ Buy me a coffee?", "source": "Source code"}, "ro": {"donate": "☕ Merit o cafeluță?", "source": "Cod sursă"}, "sr-latn": {"donate": "☕ Zaslužujem kafu?", "source": "Izvorni kod"}, "sr-cyrl": {"donate": "☕ Заслужујем кафу?", "source": "Изворни код"}, "de": {"donate": "☕ Spendierst du mir einen Kaffee?", "source": "Quellcode"}, "fr": {"donate": "☕ Tu m’offres un café ?", "source": "Code source"}, "it": {"donate": "☕ Mi offri un caffè?", "source": "Codice sorgente"}, "es": {"donate": "☕ ¿Me invitas a un café?", "source": "Código fuente"}, "pt": {"donate": "☕ Ofereces-me um café?", "source": "Código-fonte"}, "nl": {"donate": "☕ Trakteer je me op koffie?", "source": "Broncode"}};
+
             function updateUILanguage() {
+                const support = supportTranslations[currentLang] || supportTranslations.en;
+                document.getElementById('tekideki-donate').textContent = support.donate;
+                document.getElementById('tekideki-source').textContent = support.source;
+                document.documentElement.lang = currentLang === 'sr-cyrl' ? 'sr-Cyrl' : currentLang === 'sr-latn' ? 'sr-Latn' : currentLang;
                 const t = translations[currentLang];
                 btnText.textContent = t.btnText;
                 filterAll.textContent = t.filterAll;
