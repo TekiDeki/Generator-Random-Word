@@ -86,6 +86,6 @@ Automated checks are not a full accessibility certification or comprehensive cro
 
 Copyright © 2026 Kristian Mario Mišković (**TekiDeki**).
 
-**Apache License, Version 2.0** — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+**Apache License, Version 2.0** - see [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 [Support on PayPal](https://paypal.me/TekiDeki) · [Source code](https://github.com/TekiDeki/Generator-Random-Word)

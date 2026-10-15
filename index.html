@@ -27,7 +27,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://tekideki.github.io/Generator-Random-Word/og-image.png">
     <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="LexiGen — random words in 10 languages by TekiDeki">
+    <meta property="og:image:alt" content="LexiGen - random words in 10 languages by TekiDeki">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Random Word Generator in 10 Languages · LexiGen">
     <meta name="twitter:description" content="Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
@@ -1981,7 +1981,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                 const status = document.getElementById('statusMessage');
                 if (!selected) {
                     currentWord = ''; currentType = '';
-                    wordDisplay.textContent = '—'; charCountSpan.textContent = '0'; wordTypeSpan.textContent = '—';
+                    wordDisplay.textContent = '-'; charCountSpan.textContent = '0'; wordTypeSpan.textContent = '-';
                     status.textContent = tExtra().noMatch; document.getElementById('copyBtn').disabled = true; return;
                 }
                 const [word,type] = selected; updateWordDisplay(word,type); addToHistory(word,type);
