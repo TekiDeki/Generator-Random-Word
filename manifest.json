@@ -2,7 +2,7 @@
   "id": "./",
   "name": "LexiGen · Random Word Generator",
   "short_name": "LexiGen",
-  "description": "A private random word generator in 10 languages.",
+  "description": "A private random word generator in 4 languages.",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
