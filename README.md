@@ -6,8 +6,8 @@ A small, **single-file, zero-dependency** word generator for writing prompts, la
 
 ## Features
 
-- **10 languages:** English, Română, Srpski Latin, Српски Cyrillic, Deutsch, Français, Italiano, Español, Português and Nederlands.
-- Built-in lists totaling **2,763 distinct word/type/rarity entries** after removing seven exact duplicate entries in memory. These are curated lists, not comprehensive dictionaries or externally validated frequency rankings.
+- **4 languages:** English, Română, Srpski Latin, Српски Cyrillic.
+- Built-in lists totaling **1,108 distinct word/type/rarity entries** (277 per language) in memory; no exact duplicates remain. These are curated lists, not comprehensive dictionaries or externally validated frequency rankings.
 - Filter by maximum length, short words (≤5 characters), long words (≥9), or the list's editorial “rare” flag. Filters are combined with the length limit and are never silently bypassed.
 - Copy a word; if clipboard access is denied, the app selects the word and asks you to copy manually instead of falsely reporting success.
 - Last 12 generated words per language, native keyboard-accessible history buttons, and a confirmed clear-history action.
@@ -24,12 +24,6 @@ A small, **single-file, zero-dependency** word generator for writing prompts, la
 | Română | [RO](https://tekideki.github.io/Generator-Random-Word/?lang=ro) |
 | Srpski Latin | [SR](https://tekideki.github.io/Generator-Random-Word/?lang=sr-Latn) |
 | Српски Cyrillic | [СР](https://tekideki.github.io/Generator-Random-Word/?lang=sr-Cyrl) |
-| Deutsch | [DE](https://tekideki.github.io/Generator-Random-Word/?lang=de) |
-| Français | [FR](https://tekideki.github.io/Generator-Random-Word/?lang=fr) |
-| Italiano | [IT](https://tekideki.github.io/Generator-Random-Word/?lang=it) |
-| Español | [ES](https://tekideki.github.io/Generator-Random-Word/?lang=es) |
-| Português | [PT](https://tekideki.github.io/Generator-Random-Word/?lang=pt) |
-| Nederlands | [NL](https://tekideki.github.io/Generator-Random-Word/?lang=nl) |
 
 A supported URL language overrides the saved preference, which overrides the browser language. English is the fallback. Language switching updates the URL, HTML language, visible labels, document title, description, canonical URL and social metadata. The app does not put your history or chosen word in the URL.
 
@@ -53,7 +47,7 @@ Open `http://localhost:8000`. Deploy to HTTPS for production PWA support. Increm
 
 Maximum length is an integer between **3 and 22**, counting Unicode code points after NFC normalization. Length includes any non-letter characters present in a list entry. If no entry matches the combination of length and filter, the app shows a translated message and disables copying; it does not pick an out-of-filter fallback word.
 
-Selection uses `Math.random()` over matching list entries. Repeats are possible; homographs with different metadata remain separate entries. The “rare” flag comes from the existing curated lists and is **not** a corpus-derived frequency measurement. Word spellings and labels have not been independently reviewed by native speakers for all ten languages.
+Selection uses `Math.random()` over matching list entries. Repeats are possible; homographs with different metadata remain separate entries. The “rare” flag comes from the existing curated lists and is **not** a corpus-derived frequency measurement. Word spellings and labels have not been independently reviewed by native speakers for all four languages.
 
 **Do not use this generator for passwords, security tokens or codes.** It is a creative tool, not a cryptographic random generator.
 
@@ -76,7 +70,7 @@ The 2026-10-14 update was tested in Chromium with Playwright:
 - 240 combinations of language/filter/maximum length, three generations per combination;
 - history bounds, reload/language persistence, keyboard recall and clearing;
 - clipboard success/denial, bad preferences/history, denied storage and direct-file use;
-- ten languages × two themes; automated axe-core A/AA checks reported no tested violations;
+- on 2026-10-17, language switching and word generation checked in all four languages, with no JavaScript errors; the earlier two-theme and axe-core run covered ten languages and is not repeated for four; automated axe-core A/AA checks reported no tested violations;
 - 320/390/768/1280 px layout; no third-party network requests;
 - manifest parsing, service worker, new-query offline navigation, offline LICENSE and cache isolation.
 

@@ -6,8 +6,8 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Random Word Generator in 10 Languages · LexiGen</title>
-    <meta name="description" content="Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
+    <title>Random Word Generator in 4 Languages · LexiGen</title>
+    <meta name="description" content="Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
     <meta name="author" content="Kristian Mario Mišković (TekiDeki)">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#0b1220" id="themeColor">
@@ -21,29 +21,23 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LexiGen · TekiDeki">
-    <meta property="og:title" content="Random Word Generator in 10 Languages · LexiGen">
-    <meta property="og:description" content="Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
+    <meta property="og:title" content="Random Word Generator in 4 Languages · LexiGen">
+    <meta property="og:description" content="Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
     <meta property="og:url" content="https://tekideki.github.io/Generator-Random-Word/">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://tekideki.github.io/Generator-Random-Word/og-image.png">
     <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="LexiGen - random words in 10 languages by TekiDeki">
+    <meta property="og:image:alt" content="LexiGen - random words in 4 languages by TekiDeki">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Random Word Generator in 10 Languages · LexiGen">
-    <meta name="twitter:description" content="Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
+    <meta name="twitter:title" content="Random Word Generator in 4 Languages · LexiGen">
+    <meta name="twitter:description" content="Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
     <meta name="twitter:image" content="https://tekideki.github.io/Generator-Random-Word/og-image.png">
     <link rel="alternate" hreflang="en" href="https://tekideki.github.io/Generator-Random-Word/">
     <link rel="alternate" hreflang="ro" href="https://tekideki.github.io/Generator-Random-Word/?lang=ro">
     <link rel="alternate" hreflang="sr-Latn" href="https://tekideki.github.io/Generator-Random-Word/?lang=sr-Latn">
     <link rel="alternate" hreflang="sr-Cyrl" href="https://tekideki.github.io/Generator-Random-Word/?lang=sr-Cyrl">
-    <link rel="alternate" hreflang="de" href="https://tekideki.github.io/Generator-Random-Word/?lang=de">
-    <link rel="alternate" hreflang="fr" href="https://tekideki.github.io/Generator-Random-Word/?lang=fr">
-    <link rel="alternate" hreflang="it" href="https://tekideki.github.io/Generator-Random-Word/?lang=it">
-    <link rel="alternate" hreflang="es" href="https://tekideki.github.io/Generator-Random-Word/?lang=es">
-    <link rel="alternate" hreflang="pt" href="https://tekideki.github.io/Generator-Random-Word/?lang=pt">
-    <link rel="alternate" hreflang="nl" href="https://tekideki.github.io/Generator-Random-Word/?lang=nl">
     <link rel="alternate" hreflang="x-default" href="https://tekideki.github.io/Generator-Random-Word/">
-    <script type="application/ld+json" id="appSchema">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LexiGen", "description": "Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.", "url": "https://tekideki.github.io/Generator-Random-Word/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any modern browser", "inLanguage": ["en", "ro", "sr-Latn", "sr-Cyrl", "de", "fr", "it", "es", "pt", "nl"], "isAccessibleForFree": true, "license": "https://www.apache.org/licenses/LICENSE-2.0", "author": {"@type": "Person", "name": "Kristian Mario Mišković"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
+    <script type="application/ld+json" id="appSchema">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LexiGen", "description": "Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.", "url": "https://tekideki.github.io/Generator-Random-Word/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any modern browser", "inLanguage": ["en", "ro", "sr-Latn", "sr-Cyrl"], "isAccessibleForFree": true, "license": "https://www.apache.org/licenses/LICENSE-2.0", "author": {"@type": "Person", "name": "Kristian Mario Mišković"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
 
 
 
@@ -68,12 +62,6 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
         }
 
         body.lang-sr-cyrl { background: radial-gradient(circle at 80% 30%, #0b0e1a, #05070f); }
-        body.lang-de      { background: radial-gradient(circle at 70% 20%, #14100a, #05070f); }
-        body.lang-fr      { background: radial-gradient(circle at 30% 70%, #0a0b1a, #05070f); }
-        body.lang-it      { background: radial-gradient(circle at 60% 60%, #0a1a12, #05070f); }
-        body.lang-es      { background: radial-gradient(circle at 40% 30%, #1a0e0a, #05070f); }
-        body.lang-pt      { background: radial-gradient(circle at 60% 40%, #0a1a0e, #05070f); }
-        body.lang-nl      { background: radial-gradient(circle at 50% 60%, #1a140a, #05070f); }
 
         .glass-panel {
             background: rgba(18, 24, 40, 0.65);
@@ -628,12 +616,6 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                 <button class="lang-btn" data-lang="ro" aria-label="Română" aria-pressed="false"><span class="flag">🇷🇴</span> RO</button>
                 <button class="lang-btn" data-lang="sr-latn" aria-label="Srpski (latinica)" aria-pressed="false"><span class="flag">🇷🇸</span> SR</button>
                 <button class="lang-btn" data-lang="sr-cyrl" aria-label="Српски (ћирилица)" aria-pressed="false"><span class="flag">🇷🇸</span> СР</button>
-                <button class="lang-btn" data-lang="de" aria-label="Deutsch" aria-pressed="false"><span class="flag">🇩🇪</span> DE</button>
-                <button class="lang-btn" data-lang="fr" aria-label="Français" aria-pressed="false"><span class="flag">🇫🇷</span> FR</button>
-                <button class="lang-btn" data-lang="it" aria-label="Italiano" aria-pressed="false"><span class="flag">🇮🇹</span> IT</button>
-                <button class="lang-btn" data-lang="es" aria-label="Español" aria-pressed="false"><span class="flag">🇪🇸</span> ES</button>
-                <button class="lang-btn" data-lang="pt" aria-label="Português" aria-pressed="false"><span class="flag">🇵🇹</span> PT</button>
-                <button class="lang-btn" data-lang="nl" aria-label="Nederlands" aria-pressed="false"><span class="flag">🇳🇱</span> NL</button>
             </div>
         </div>
 
@@ -704,7 +686,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
     <script>
         (function() {
             // ============================================================
-            //  DICTIONARIES FOR 10 LANGUAGES
+            //  DICTIONARIES FOR 4 LANGUAGES
             // ============================================================
 
             const dictionaries = {
@@ -1100,594 +1082,6 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                         ["тривијалан", "adjective", 2]
                     ]
                 },
-                "de": {
-                    name: "Deutsch",
-                    words: [
-                        ["Sonne", "noun", 1], ["Licht", "noun", 1], ["Traum", "noun", 1],
-                        ["Frieden", "noun", 1], ["Wald", "noun", 2], ["Quelle", "noun", 2],
-                        ["Wort", "noun", 1], ["Blume", "noun", 1], ["Wind", "noun", 1],
-                        ["Himmel", "noun", 1], ["Stern", "noun", 1], ["Berg", "noun", 1],
-                        ["Meer", "noun", 1], ["Fluss", "noun", 1], ["Feuer", "noun", 1],
-                        ["Erde", "noun", 1], ["Welt", "noun", 1], ["Zeit", "noun", 1],
-                        ["Mensch", "noun", 1], ["Kind", "noun", 1], ["Freund", "noun", 1],
-                        ["Liebe", "noun", 1], ["Seele", "noun", 1], ["Gedanke", "noun", 1],
-                        ["Sehnsucht", "noun", 2], ["Träumer", "noun", 2], ["Reisender", "noun", 2],
-                        ["Magie", "noun", 2], ["Mysterium", "noun", 2], ["Echo", "noun", 2],
-                        ["Harmonie", "noun", 2], ["Freiheit", "noun", 1], ["Mut", "noun", 1],
-                        ["Hoffnung", "noun", 1], ["Glaube", "noun", 1], ["Wahrheit", "noun", 1],
-                        ["Gerechtigkeit", "noun", 1], ["Weisheit", "noun", 2], ["Wissen", "noun", 2],
-                        ["Unendlichkeit", "noun", 3], ["Ewigkeit", "noun", 3], ["Metamorphose", "noun", 3],
-                        ["Paradox", "noun", 3], ["Synästhesie", "noun", 3], ["Abgrund", "noun", 2],
-                        ["Oase", "noun", 2], ["Fata Morgana", "noun", 3], ["Faszination", "noun", 2],
-                        ["Fülle", "noun", 3], ["flüchtig", "adjective", 3], ["erhaben", "adjective", 2],
-                        ["absurd", "adjective", 2], ["luzid", "adjective", 2], ["zerbrechlich", "adjective", 2],
-                        ["kristallin", "adjective", 2], ["azurblau", "adjective", 2], ["heiter", "adjective", 1],
-                        ["tief", "adjective", 1], ["vibrierend", "adjective", 2], ["beredt", "adjective", 3],
-                        ["synthetisch", "adjective", 3], ["Algorithmus", "noun", 2], ["Entropie", "noun", 3],
-                        ["Quasar", "noun", 3], ["Nebel", "noun", 2], ["Äther", "noun", 2],
-                        ["Psyche", "noun", 2], ["Archetyp", "noun", 3], ["Logos", "noun", 3],
-                        ["Resonanz", "noun", 2], ["Spektrum", "noun", 2], ["Synapse", "noun", 3],
-                        ["Neuron", "noun", 2], ["Genom", "noun", 2], ["Ökosystem", "noun", 2],
-                        ["Biodiversität", "noun", 3], ["Nachhaltigkeit", "noun", 3], ["unsagbar", "adjective", 3],
-                        ["greifbar", "adjective", 3], ["flüchtig", "adjective", 2], ["kathartisch", "adjective", 3],
-                        ["lyrisch", "adjective", 2], ["hermetisch", "adjective", 3], ["esoterisch", "adjective", 3],
-                        ["orakelhaft", "adjective", 3], ["Kosmogonie", "noun", 3], ["Theogonie", "noun", 3],
-                        ["Architektur", "noun", 2], ["Symphonie", "noun", 2], ["Poesie", "noun", 1],
-                        ["Flug", "noun", 1], ["hoch", "adjective", 1], ["tief", "adjective", 1],
-                        ["hell", "adjective", 1], ["dunkel", "adjective", 1], ["warm", "adjective", 1],
-                        ["kalt", "adjective", 1], ["süß", "adjective", 1], ["bitter", "adjective", 1],
-                        ["frisch", "adjective", 1], ["alt", "adjective", 1], ["neu", "adjective", 1],
-                        ["schnell", "adjective", 1], ["langsam", "adjective", 1], ["schön", "adjective", 1],
-                        ["hässlich", "adjective", 2], ["riesig", "adjective", 1], ["winzig", "adjective", 1],
-                        ["glänzend", "adjective", 2], ["rein", "adjective", 1], ["komplex", "adjective", 1],
-                        ["einfach", "adjective", 1], ["abstrakt", "adjective", 2], ["konkret", "adjective", 2],
-                        ["fiktiv", "adjective", 2], ["real", "adjective", 1], ["virtuell", "adjective", 2],
-                        ["erweitert", "adjective", 3], ["quanten", "adjective", 3], ["relativ", "adjective", 2],
-                        ["absolut", "adjective", 2], ["binär", "adjective", 3], ["digital", "adjective", 1],
-                        ["analog", "adjective", 2], ["kybernetisch", "adjective", 3], ["autonom", "adjective", 2],
-                        ["synergetisch", "adjective", 3], ["holistisch", "adjective", 3], ["fraktal", "adjective", 3],
-                        ["rekursiv", "adjective", 3], ["iterativ", "adjective", 3], ["stochastisch", "adjective", 3],
-                        ["deterministisch", "adjective", 3], ["heuristisch", "adjective", 3], ["intuitiv", "adjective", 2],
-                        ["rational", "adjective", 2], ["empirisch", "adjective", 3], ["pragmatisch", "adjective", 2],
-                        ["idealistisch", "adjective", 2], ["materialistisch", "adjective", 2], ["spirituell", "adjective", 2],
-                        ["heilig", "adjective", 2], ["profan", "adjective", 2], ["mystisch", "adjective", 2],
-                        ["okkult", "adjective", 2], ["manifest", "adjective", 2], ["latent", "adjective", 3],
-                        ["explizit", "adjective", 2], ["implizit", "adjective", 2], ["konnotativ", "adjective", 3],
-                        ["denotativ", "adjective", 3], ["polysem", "adjective", 3], ["monosem", "adjective", 3],
-                        ["synonym", "adjective", 3], ["antonym", "adjective", 3], ["Homophon", "noun", 3],
-                        ["Homograph", "noun", 3], ["Paronym", "noun", 3], ["Neologismus", "noun", 3],
-                        ["Archaismus", "noun", 3], ["Regionalismus", "noun", 3], ["Barbarismus", "noun", 3],
-                        ["Solözismus", "noun", 3], ["Pleonasmus", "noun", 3], ["Tautologie", "noun", 3],
-                        ["Euphemismus", "noun", 3], ["Oxymoron", "noun", 3], ["Antithese", "noun", 3],
-                        ["Syllogismus", "noun", 3], ["Enthymem", "noun", 3], ["Dilemma", "noun", 3],
-                        ["Aphorismus", "noun", 3], ["Maxime", "noun", 3], ["Epigramm", "noun", 3],
-                        ["Epitaph", "noun", 3], ["Lobrede", "noun", 3], ["Panegyrikus", "noun", 3],
-                        ["Diatribe", "noun", 3], ["Invektive", "noun", 3], ["Pamphlet", "noun", 3],
-                        ["Satire", "noun", 3], ["Parodie", "noun", 3], ["Simulakrum", "noun", 3],
-                        ["Simulation", "noun", 2], ["Dissimulation", "noun", 3], ["Mimikry", "noun", 3],
-                        ["Tarnung", "noun", 3], ["Biomimikry", "noun", 3], ["Nanotechnologie", "noun", 3],
-                        ["Biotechnologie", "noun", 3], ["Kognition", "noun", 3], ["Metakognition", "noun", 3],
-                        ["Intelligenz", "noun", 1], ["künstlich", "adjective", 2], ["immersiv", "adjective", 3],
-                        ["haptisch", "adjective", 3], ["olfaktorisch", "adjective", 3], ["gustatorisch", "adjective", 3],
-                        ["auditiv", "adjective", 3], ["visuell", "adjective", 2], ["kinästhetisch", "adjective", 3],
-                        ["propriozeptiv", "adjective", 3], ["vestibulär", "adjective", 3], ["nozizeptiv", "adjective", 3],
-                        ["thermorezeptiv", "adjective", 3], ["elektrorezeptiv", "adjective", 3], ["magnetorezeptiv", "adjective", 3],
-                        ["Echolokation", "noun", 3], ["Elektrozeption", "noun", 3], ["Magnetorezeption", "noun", 3],
-                        ["Photorezeption", "noun", 3], ["Chemorezeption", "noun", 3], ["Mechanorezeption", "noun", 3],
-                        ["Thermorezeption", "noun", 3], ["Nozizeption", "noun", 3], ["Propriozeption", "noun", 3],
-                        ["Interozeption", "noun", 3], ["Exterozeption", "noun", 3], ["Sensation", "noun", 2],
-                        ["Perzeption", "noun", 2], ["Apperzeption", "noun", 3], ["synästhetisch", "adjective", 3],
-                        ["Qualia", "noun", 3], ["Phänomenologie", "noun", 3], ["Erkenntnistheorie", "noun", 3],
-                        ["Ontologie", "noun", 3], ["Axiologie", "noun", 3], ["Teleologie", "noun", 3],
-                        ["Deontologie", "noun", 3], ["Hermeneutik", "noun", 3], ["Exegese", "noun", 3],
-                        ["Dialektik", "noun", 3], ["Rhetorik", "noun", 3], ["Sophistik", "noun", 3],
-                        ["Eristik", "noun", 3], ["Mäeutik", "noun", 3], ["Katharsis", "noun", 3],
-                        ["Mimesis", "noun", 3], ["Diegese", "noun", 3], ["Fabula", "noun", 3],
-                        ["Intrige", "noun", 2], ["Peripetie", "noun", 3], ["Anagnorisis", "noun", 3],
-                        ["Katastrophe", "noun", 2], ["Auflösung", "noun", 2], ["Epilog", "noun", 2],
-                        ["Prolog", "noun", 2], ["Epiphanie", "noun", 3], ["Offenbarung", "noun", 2],
-                        ["Erleuchtung", "noun", 2], ["Satori", "noun", 3], ["Nirwana", "noun", 3],
-                        ["Zenit", "noun", 2], ["Apogäum", "noun", 2], ["Perigäum", "noun", 3],
-                        ["Nadir", "noun", 3], ["Klinamen", "noun", 3], ["Apeiron", "noun", 3],
-                        ["Pneuma", "noun", 3], ["Arche", "noun", 3], ["Kosmos", "noun", 2],
-                        ["Chaos", "noun", 2], ["Negentropie", "noun", 3], ["Synergetik", "noun", 3],
-                        ["Autopoiese", "noun", 3], ["Emergenz", "noun", 3], ["Komplexität", "noun", 2],
-                        ["Einfachheit", "noun", 2], ["elegant", "adjective", 2], ["raffiniert", "adjective", 2],
-                        ["sofisticated", "adjective", 2], ["brutal", "adjective", 2], ["wild", "adjective", 2],
-                        ["domestiziert", "adjective", 2], ["exotisch", "adjective", 2], ["banal", "adjective", 2],
-                        ["trivial", "adjective", 2]
-                    ]
-                },
-                "fr": {
-                    name: "Français",
-                    words: [
-                        ["soleil", "noun", 1], ["lumière", "noun", 1], ["rêve", "noun", 1],
-                        ["paix", "noun", 1], ["forêt", "noun", 2], ["source", "noun", 2],
-                        ["mot", "noun", 1], ["fleur", "noun", 1], ["vent", "noun", 1],
-                        ["ciel", "noun", 1], ["étoile", "noun", 1], ["montagne", "noun", 1],
-                        ["mer", "noun", 1], ["rivière", "noun", 1], ["feu", "noun", 1],
-                        ["terre", "noun", 1], ["monde", "noun", 1], ["temps", "noun", 1],
-                        ["homme", "noun", 1], ["enfant", "noun", 1], ["ami", "noun", 1],
-                        ["amour", "noun", 1], ["âme", "noun", 1], ["pensée", "noun", 1],
-                        ["désir", "noun", 2], ["rêveur", "noun", 2], ["voyageur", "noun", 2],
-                        ["magie", "noun", 2], ["mystère", "noun", 2], ["écho", "noun", 2],
-                        ["harmonie", "noun", 2], ["liberté", "noun", 1], ["courage", "noun", 1],
-                        ["espoir", "noun", 1], ["foi", "noun", 1], ["vérité", "noun", 1],
-                        ["justice", "noun", 1], ["sagesse", "noun", 2], ["connaissance", "noun", 2],
-                        ["infini", "noun", 3], ["éternité", "noun", 3], ["métamorphose", "noun", 3],
-                        ["paradoxe", "noun", 3], ["synesthésie", "noun", 3], ["abîme", "noun", 2],
-                        ["oasis", "noun", 2], ["mirage", "noun", 3], ["fascination", "noun", 2],
-                        ["plénitude", "noun", 3], ["éphémère", "adjective", 3], ["sublime", "adjective", 2],
-                        ["absurde", "adjective", 2], ["lucide", "adjective", 2], ["fragile", "adjective", 2],
-                        ["cristallin", "adjective", 2], ["azur", "adjective", 2], ["serein", "adjective", 1],
-                        ["profond", "adjective", 1], ["vibrant", "adjective", 2], ["éloquent", "adjective", 3],
-                        ["synthétique", "adjective", 3], ["algorithme", "noun", 2], ["entropie", "noun", 3],
-                        ["quasar", "noun", 3], ["nébuleuse", "noun", 2], ["éther", "noun", 2],
-                        ["psyché", "noun", 2], ["archétype", "noun", 3], ["logos", "noun", 3],
-                        ["résonance", "noun", 2], ["spectre", "noun", 2], ["synapse", "noun", 3],
-                        ["neurone", "noun", 2], ["génome", "noun", 2], ["écosystème", "noun", 2],
-                        ["biodiversité", "noun", 3], ["durabilité", "noun", 3], ["ineffable", "adjective", 3],
-                        ["tangible", "adjective", 3], ["volatil", "adjective", 2], ["cathartique", "adjective", 3],
-                        ["lyrique", "adjective", 2], ["hermétique", "adjective", 3], ["ésotérique", "adjective", 3],
-                        ["oraculaire", "adjective", 3], ["cosmogonie", "noun", 3], ["théogonie", "noun", 3],
-                        ["architecture", "noun", 2], ["symphonie", "noun", 2], ["poésie", "noun", 1],
-                        ["vol", "noun", 1], ["haut", "adjective", 1], ["profond", "adjective", 1],
-                        ["brillant", "adjective", 1], ["sombre", "adjective", 1], ["chaud", "adjective", 1],
-                        ["froid", "adjective", 1], ["doux", "adjective", 1], ["amer", "adjective", 1],
-                        ["frais", "adjective", 1], ["vieux", "adjective", 1], ["nouveau", "adjective", 1],
-                        ["rapide", "adjective", 1], ["lent", "adjective", 1], ["beau", "adjective", 1],
-                        ["hideux", "adjective", 2], ["énorme", "adjective", 1], ["minuscule", "adjective", 1],
-                        ["éclatant", "adjective", 2], ["pur", "adjective", 1], ["complexe", "adjective", 1],
-                        ["simple", "adjective", 1], ["abstrait", "adjective", 2], ["concret", "adjective", 2],
-                        ["fictif", "adjective", 2], ["réel", "adjective", 1], ["virtuel", "adjective", 2],
-                        ["augmenté", "adjective", 3], ["quantique", "adjective", 3], ["relatif", "adjective", 2],
-                        ["absolu", "adjective", 2], ["binaire", "adjective", 3], ["numérique", "adjective", 1],
-                        ["analogique", "adjective", 2], ["cybernétique", "adjective", 3], ["autonome", "adjective", 2],
-                        ["synergétique", "adjective", 3], ["holistique", "adjective", 3], ["fractal", "adjective", 3],
-                        ["récursif", "adjective", 3], ["itératif", "adjective", 3], ["stochastique", "adjective", 3],
-                        ["déterministe", "adjective", 3], ["heuristique", "adjective", 3], ["intuitif", "adjective", 2],
-                        ["rationnel", "adjective", 2], ["empirique", "adjective", 3], ["pragmatique", "adjective", 2],
-                        ["idéaliste", "adjective", 2], ["matérialiste", "adjective", 2], ["spirituel", "adjective", 2],
-                        ["sacré", "adjective", 2], ["profane", "adjective", 2], ["mystique", "adjective", 2],
-                        ["occulte", "adjective", 2], ["manifeste", "adjective", 2], ["latent", "adjective", 3],
-                        ["explicite", "adjective", 2], ["implicite", "adjective", 2], ["connotatif", "adjective", 3],
-                        ["dénotatif", "adjective", 3], ["polysémique", "adjective", 3], ["monosémique", "adjective", 3],
-                        ["synonyme", "adjective", 3], ["antonyme", "adjective", 3], ["homophone", "noun", 3],
-                        ["homographe", "noun", 3], ["paronyme", "noun", 3], ["néologisme", "noun", 3],
-                        ["archaïsme", "noun", 3], ["régionalisme", "noun", 3], ["barbarisme", "noun", 3],
-                        ["solécisme", "noun", 3], ["pléonasme", "noun", 3], ["tautologie", "noun", 3],
-                        ["euphémisme", "noun", 3], ["oxymore", "noun", 3], ["antithèse", "noun", 3],
-                        ["syllogisme", "noun", 3], ["enthymème", "noun", 3], ["dilemme", "noun", 3],
-                        ["aphorisme", "noun", 3], ["maxime", "noun", 3], ["épigramme", "noun", 3],
-                        ["épitaphe", "noun", 3], ["éloge", "noun", 3], ["panégyrique", "noun", 3],
-                        ["diatribe", "noun", 3], ["invective", "noun", 3], ["pamphlet", "noun", 3],
-                        ["satire", "noun", 3], ["parodie", "noun", 3], ["simulacre", "noun", 3],
-                        ["simulation", "noun", 2], ["dissimulation", "noun", 3], ["mimétisme", "noun", 3],
-                        ["camouflage", "noun", 3], ["biomimétisme", "noun", 3], ["nanotechnologie", "noun", 3],
-                        ["biotechnologie", "noun", 3], ["cognition", "noun", 3], ["métacognition", "noun", 3],
-                        ["intelligence", "noun", 1], ["artificiel", "adjective", 2], ["immersif", "adjective", 3],
-                        ["haptique", "adjective", 3], ["olfactif", "adjective", 3], ["gustatif", "adjective", 3],
-                        ["auditif", "adjective", 3], ["visuel", "adjective", 2], ["kinesthésique", "adjective", 3],
-                        ["proprioceptif", "adjective", 3], ["vestibulaire", "adjective", 3], ["nociceptif", "adjective", 3],
-                        ["thermoréceptif", "adjective", 3], ["électroréceptif", "adjective", 3], ["magnétoréceptif", "adjective", 3],
-                        ["écholocation", "noun", 3], ["électroception", "noun", 3], ["magnétoréception", "noun", 3],
-                        ["photoréception", "noun", 3], ["chimioréception", "noun", 3], ["mécanoréception", "noun", 3],
-                        ["thermoréception", "noun", 3], ["nociception", "noun", 3], ["proprioception", "noun", 3],
-                        ["intéroception", "noun", 3], ["extéroception", "noun", 3], ["sensation", "noun", 2],
-                        ["perception", "noun", 2], ["aperception", "noun", 3], ["synesthésique", "adjective", 3],
-                        ["qualia", "noun", 3], ["phénoménologie", "noun", 3], ["épistémologie", "noun", 3],
-                        ["ontologie", "noun", 3], ["axiologie", "noun", 3], ["téléologie", "noun", 3],
-                        ["déontologie", "noun", 3], ["herméneutique", "noun", 3], ["exégèse", "noun", 3],
-                        ["dialectique", "noun", 3], ["rhétorique", "noun", 3], ["sophistique", "noun", 3],
-                        ["éristique", "noun", 3], ["maïeutique", "noun", 3], ["catharsis", "noun", 3],
-                        ["mimèsis", "noun", 3], ["diégèse", "noun", 3], ["fabula", "noun", 3],
-                        ["intrigue", "noun", 2], ["péripétie", "noun", 3], ["anagnorisis", "noun", 3],
-                        ["catastrophe", "noun", 2], ["dénouement", "noun", 2], ["épilogue", "noun", 2],
-                        ["prologue", "noun", 2], ["épiphanie", "noun", 3], ["révélation", "noun", 2],
-                        ["illumination", "noun", 2], ["satori", "noun", 3], ["nirvana", "noun", 3],
-                        ["zénith", "noun", 2], ["apogée", "noun", 2], ["périgée", "noun", 3],
-                        ["nadir", "noun", 3], ["clinamen", "noun", 3], ["apeiron", "noun", 3],
-                        ["pneuma", "noun", 3], ["arché", "noun", 3], ["cosmos", "noun", 2],
-                        ["chaos", "noun", 2], ["néguentropie", "noun", 3], ["synergétique", "noun", 3],
-                        ["autopoïèse", "noun", 3], ["émergence", "noun", 3], ["complexité", "noun", 2],
-                        ["simplicité", "noun", 2], ["élégant", "adjective", 2], ["raffiné", "adjective", 2],
-                        ["sophistiqué", "adjective", 2], ["brutal", "adjective", 2], ["sauvage", "adjective", 2],
-                        ["domestique", "adjective", 2], ["exotique", "adjective", 2], ["banal", "adjective", 2],
-                        ["trivial", "adjective", 2]
-                    ]
-                },
-                "it": {
-                    name: "Italiano",
-                    words: [
-                        ["sole", "noun", 1], ["luce", "noun", 1], ["sogno", "noun", 1],
-                        ["pace", "noun", 1], ["foresta", "noun", 2], ["sorgente", "noun", 2],
-                        ["parola", "noun", 1], ["fiore", "noun", 1], ["vento", "noun", 1],
-                        ["cielo", "noun", 1], ["stella", "noun", 1], ["montagna", "noun", 1],
-                        ["mare", "noun", 1], ["fiume", "noun", 1], ["fuoco", "noun", 1],
-                        ["terra", "noun", 1], ["mondo", "noun", 1], ["tempo", "noun", 1],
-                        ["uomo", "noun", 1], ["bambino", "noun", 1], ["amico", "noun", 1],
-                        ["amore", "noun", 1], ["anima", "noun", 1], ["pensiero", "noun", 1],
-                        ["desiderio", "noun", 2], ["sognatore", "noun", 2], ["viaggiatore", "noun", 2],
-                        ["magia", "noun", 2], ["mistero", "noun", 2], ["eco", "noun", 2],
-                        ["armonia", "noun", 2], ["libertà", "noun", 1], ["coraggio", "noun", 1],
-                        ["speranza", "noun", 1], ["fede", "noun", 1], ["verità", "noun", 1],
-                        ["giustizia", "noun", 1], ["saggezza", "noun", 2], ["conoscenza", "noun", 2],
-                        ["infinito", "noun", 3], ["eternità", "noun", 3], ["metamorfosi", "noun", 3],
-                        ["paradosso", "noun", 3], ["sinestesia", "noun", 3], ["abisso", "noun", 2],
-                        ["oasi", "noun", 2], ["miraggio", "noun", 3], ["fascinazione", "noun", 2],
-                        ["pienezza", "noun", 3], ["effimero", "adjective", 3], ["sublime", "adjective", 2],
-                        ["assurdo", "adjective", 2], ["lucido", "adjective", 2], ["fragile", "adjective", 2],
-                        ["cristallino", "adjective", 2], ["azzurro", "adjective", 2], ["sereno", "adjective", 1],
-                        ["profondo", "adjective", 1], ["vibrante", "adjective", 2], ["eloquente", "adjective", 3],
-                        ["sintetico", "adjective", 3], ["algoritmo", "noun", 2], ["entropia", "noun", 3],
-                        ["quasar", "noun", 3], ["nebulosa", "noun", 2], ["etere", "noun", 2],
-                        ["psiche", "noun", 2], ["archetipo", "noun", 3], ["logos", "noun", 3],
-                        ["risonanza", "noun", 2], ["spettro", "noun", 2], ["sinapsi", "noun", 3],
-                        ["neurone", "noun", 2], ["genoma", "noun", 2], ["ecosistema", "noun", 2],
-                        ["biodiversità", "noun", 3], ["sostenibilità", "noun", 3], ["ineffabile", "adjective", 3],
-                        ["tangibile", "adjective", 3], ["volatile", "adjective", 2], ["catartico", "adjective", 3],
-                        ["lirico", "adjective", 2], ["ermetico", "adjective", 3], ["esoterico", "adjective", 3],
-                        ["oracolare", "adjective", 3], ["cosmogonia", "noun", 3], ["teogonia", "noun", 3],
-                        ["architettura", "noun", 2], ["sinfonia", "noun", 2], ["poesia", "noun", 1],
-                        ["volo", "noun", 1], ["alto", "adjective", 1], ["profondo", "adjective", 1],
-                        ["luminoso", "adjective", 1], ["oscuro", "adjective", 1], ["caldo", "adjective", 1],
-                        ["freddo", "adjective", 1], ["dolce", "adjective", 1], ["amaro", "adjective", 1],
-                        ["fresco", "adjective", 1], ["vecchio", "adjective", 1], ["nuovo", "adjective", 1],
-                        ["veloce", "adjective", 1], ["lento", "adjective", 1], ["bello", "adjective", 1],
-                        ["brutto", "adjective", 2], ["enorme", "adjective", 1], ["minuscolo", "adjective", 1],
-                        ["splendente", "adjective", 2], ["puro", "adjective", 1], ["complesso", "adjective", 1],
-                        ["semplice", "adjective", 1], ["astratto", "adjective", 2], ["concreto", "adjective", 2],
-                        ["fittizio", "adjective", 2], ["reale", "adjective", 1], ["virtuale", "adjective", 2],
-                        ["aumentato", "adjective", 3], ["quantistico", "adjective", 3], ["relativo", "adjective", 2],
-                        ["assoluto", "adjective", 2], ["binario", "adjective", 3], ["digitale", "adjective", 1],
-                        ["analogico", "adjective", 2], ["cibernetico", "adjective", 3], ["autonomo", "adjective", 2],
-                        ["sinergico", "adjective", 3], ["olistico", "adjective", 3], ["frattale", "adjective", 3],
-                        ["ricorsivo", "adjective", 3], ["iterativo", "adjective", 3], ["stocastico", "adjective", 3],
-                        ["deterministico", "adjective", 3], ["euristico", "adjective", 3], ["intuitivo", "adjective", 2],
-                        ["razionale", "adjective", 2], ["empirico", "adjective", 3], ["pragmatico", "adjective", 2],
-                        ["idealista", "adjective", 2], ["materialista", "adjective", 2], ["spirituale", "adjective", 2],
-                        ["sacro", "adjective", 2], ["profano", "adjective", 2], ["mistico", "adjective", 2],
-                        ["occulto", "adjective", 2], ["manifesto", "adjective", 2], ["latente", "adjective", 3],
-                        ["esplicito", "adjective", 2], ["implicito", "adjective", 2], ["connotativo", "adjective", 3],
-                        ["denotativo", "adjective", 3], ["polisemico", "adjective", 3], ["monosemico", "adjective", 3],
-                        ["sinonimico", "adjective", 3], ["antonimico", "adjective", 3], ["omofono", "noun", 3],
-                        ["omografo", "noun", 3], ["paronimo", "noun", 3], ["neologismo", "noun", 3],
-                        ["arcaismo", "noun", 3], ["regionalismo", "noun", 3], ["barbarismo", "noun", 3],
-                        ["solecismo", "noun", 3], ["pleonasmo", "noun", 3], ["tautologia", "noun", 3],
-                        ["eufemismo", "noun", 3], ["ossimoro", "noun", 3], ["antitesi", "noun", 3],
-                        ["sillogismo", "noun", 3], ["entimema", "noun", 3], ["dilemma", "noun", 3],
-                        ["aforisma", "noun", 3], ["massima", "noun", 3], ["epigramma", "noun", 3],
-                        ["epitaffio", "noun", 3], ["elogio", "noun", 3], ["panegirico", "noun", 3],
-                        ["diatriba", "noun", 3], ["invettiva", "noun", 3], ["pamphlet", "noun", 3],
-                        ["satira", "noun", 3], ["parodia", "noun", 3], ["simulacro", "noun", 3],
-                        ["simulazione", "noun", 2], ["dissimulazione", "noun", 3], ["mimetismo", "noun", 3],
-                        ["camuffamento", "noun", 3], ["biomimetismo", "noun", 3], ["nanotecnologia", "noun", 3],
-                        ["biotecnologia", "noun", 3], ["cognizione", "noun", 3], ["metacognizione", "noun", 3],
-                        ["intelligenza", "noun", 1], ["artificiale", "adjective", 2], ["immersivo", "adjective", 3],
-                        ["aptico", "adjective", 3], ["olfattivo", "adjective", 3], ["gustativo", "adjective", 3],
-                        ["uditivo", "adjective", 3], ["visivo", "adjective", 2], ["cinestetico", "adjective", 3],
-                        ["propriocettivo", "adjective", 3], ["vestibolare", "adjective", 3], ["nocicettivo", "adjective", 3],
-                        ["termocettivo", "adjective", 3], ["elettrocettivo", "adjective", 3], ["magnetocettivo", "adjective", 3],
-                        ["ecolocalizzazione", "noun", 3], ["elettrocezione", "noun", 3], ["magnetorecezione", "noun", 3],
-                        ["fotorecezione", "noun", 3], ["chemiocezione", "noun", 3], ["meccanorecezione", "noun", 3],
-                        ["termocezione", "noun", 3], ["nocicezione", "noun", 3], ["propriocezione", "noun", 3],
-                        ["interocezione", "noun", 3], ["esterocezione", "noun", 3], ["sensazione", "noun", 2],
-                        ["percezione", "noun", 2], ["appercezione", "noun", 3], ["sinestetico", "adjective", 3],
-                        ["qualia", "noun", 3], ["fenomenologia", "noun", 3], ["epistemologia", "noun", 3],
-                        ["ontologia", "noun", 3], ["assiologia", "noun", 3], ["teleologia", "noun", 3],
-                        ["deontologia", "noun", 3], ["ermeneutica", "noun", 3], ["esegesi", "noun", 3],
-                        ["dialettica", "noun", 3], ["retorica", "noun", 3], ["sofistica", "noun", 3],
-                        ["eristica", "noun", 3], ["maieutica", "noun", 3], ["catarsi", "noun", 3],
-                        ["mimesi", "noun", 3], ["diegesi", "noun", 3], ["fabula", "noun", 3],
-                        ["intrigo", "noun", 2], ["peripezia", "noun", 3], ["anagnorisi", "noun", 3],
-                        ["catastrofe", "noun", 2], ["scioglimento", "noun", 2], ["epilogo", "noun", 2],
-                        ["prologo", "noun", 2], ["epifania", "noun", 3], ["rivelazione", "noun", 2],
-                        ["illuminazione", "noun", 2], ["satori", "noun", 3], ["nirvana", "noun", 3],
-                        ["zenit", "noun", 2], ["apogeo", "noun", 2], ["perigeo", "noun", 3],
-                        ["nadir", "noun", 3], ["clinamen", "noun", 3], ["apeiron", "noun", 3],
-                        ["pneuma", "noun", 3], ["arche", "noun", 3], ["cosmo", "noun", 2],
-                        ["caos", "noun", 2], ["negentropia", "noun", 3], ["sinergetica", "noun", 3],
-                        ["autopoiesi", "noun", 3], ["emergenza", "noun", 3], ["complessità", "noun", 2],
-                        ["semplicità", "noun", 2], ["elegante", "adjective", 2], ["raffinato", "adjective", 2],
-                        ["sofisticato", "adjective", 2], ["brutale", "adjective", 2], ["selvaggio", "adjective", 2],
-                        ["domestico", "adjective", 2], ["esotico", "adjective", 2], ["banale", "adjective", 2],
-                        ["triviale", "adjective", 2]
-                    ]
-                },
-                "es": {
-                    name: "Español",
-                    words: [
-                        ["sol", "noun", 1], ["luz", "noun", 1], ["sueño", "noun", 1],
-                        ["paz", "noun", 1], ["bosque", "noun", 2], ["manantial", "noun", 2],
-                        ["palabra", "noun", 1], ["flor", "noun", 1], ["viento", "noun", 1],
-                        ["cielo", "noun", 1], ["estrella", "noun", 1], ["montaña", "noun", 1],
-                        ["mar", "noun", 1], ["río", "noun", 1], ["fuego", "noun", 1],
-                        ["tierra", "noun", 1], ["mundo", "noun", 1], ["tiempo", "noun", 1],
-                        ["hombre", "noun", 1], ["niño", "noun", 1], ["amigo", "noun", 1],
-                        ["amor", "noun", 1], ["alma", "noun", 1], ["pensamiento", "noun", 1],
-                        ["deseo", "noun", 2], ["soñador", "noun", 2], ["viajero", "noun", 2],
-                        ["magia", "noun", 2], ["misterio", "noun", 2], ["eco", "noun", 2],
-                        ["armonía", "noun", 2], ["libertad", "noun", 1], ["coraje", "noun", 1],
-                        ["esperanza", "noun", 1], ["fe", "noun", 1], ["verdad", "noun", 1],
-                        ["justicia", "noun", 1], ["sabiduría", "noun", 2], ["conocimiento", "noun", 2],
-                        ["infinito", "noun", 3], ["eternidad", "noun", 3], ["metamorfosis", "noun", 3],
-                        ["paradoja", "noun", 3], ["sinestesia", "noun", 3], ["abismo", "noun", 2],
-                        ["oasis", "noun", 2], ["espejismo", "noun", 3], ["fascinación", "noun", 2],
-                        ["plenitud", "noun", 3], ["efímero", "adjective", 3], ["sublime", "adjective", 2],
-                        ["absurdo", "adjective", 2], ["lúcido", "adjective", 2], ["frágil", "adjective", 2],
-                        ["cristalino", "adjective", 2], ["azul", "adjective", 1], ["sereno", "adjective", 1],
-                        ["profundo", "adjective", 1], ["vibrante", "adjective", 2], ["elocuente", "adjective", 3],
-                        ["sintético", "adjective", 3], ["algoritmo", "noun", 2], ["entropía", "noun", 3],
-                        ["cuásar", "noun", 3], ["nebulosa", "noun", 2], ["éter", "noun", 2],
-                        ["psique", "noun", 2], ["arquetipo", "noun", 3], ["logos", "noun", 3],
-                        ["resonancia", "noun", 2], ["espectro", "noun", 2], ["sinapsis", "noun", 3],
-                        ["neurona", "noun", 2], ["genoma", "noun", 2], ["ecosistema", "noun", 2],
-                        ["biodiversidad", "noun", 3], ["sostenibilidad", "noun", 3], ["inefable", "adjective", 3],
-                        ["tangible", "adjective", 3], ["volátil", "adjective", 2], ["catártico", "adjective", 3],
-                        ["lírico", "adjective", 2], ["hermético", "adjective", 3], ["esotérico", "adjective", 3],
-                        ["oracular", "adjective", 3], ["cosmogonía", "noun", 3], ["teogonía", "noun", 3],
-                        ["arquitectura", "noun", 2], ["sinfonía", "noun", 2], ["poesía", "noun", 1],
-                        ["vuelo", "noun", 1], ["alto", "adjective", 1], ["profundo", "adjective", 1],
-                        ["brillante", "adjective", 1], ["oscuro", "adjective", 1], ["cálido", "adjective", 1],
-                        ["frío", "adjective", 1], ["dulce", "adjective", 1], ["amargo", "adjective", 1],
-                        ["fresco", "adjective", 1], ["viejo", "adjective", 1], ["nuevo", "adjective", 1],
-                        ["rápido", "adjective", 1], ["lento", "adjective", 1], ["hermoso", "adjective", 1],
-                        ["horrible", "adjective", 2], ["enorme", "adjective", 1], ["diminuto", "adjective", 1],
-                        ["resplandeciente", "adjective", 2], ["puro", "adjective", 1], ["complejo", "adjective", 1],
-                        ["simple", "adjective", 1], ["abstracto", "adjective", 2], ["concreto", "adjective", 2],
-                        ["ficticio", "adjective", 2], ["real", "adjective", 1], ["virtual", "adjective", 2],
-                        ["aumentado", "adjective", 3], ["cuántico", "adjective", 3], ["relativo", "adjective", 2],
-                        ["absoluto", "adjective", 2], ["binario", "adjective", 3], ["digital", "adjective", 1],
-                        ["analógico", "adjective", 2], ["cibernético", "adjective", 3], ["autónomo", "adjective", 2],
-                        ["sinérgico", "adjective", 3], ["holístico", "adjective", 3], ["fractal", "adjective", 3],
-                        ["recursivo", "adjective", 3], ["iterativo", "adjective", 3], ["estocástico", "adjective", 3],
-                        ["determinista", "adjective", 3], ["heurístico", "adjective", 3], ["intuitivo", "adjective", 2],
-                        ["racional", "adjective", 2], ["empírico", "adjective", 3], ["pragmático", "adjective", 2],
-                        ["idealista", "adjective", 2], ["materialista", "adjective", 2], ["espiritual", "adjective", 2],
-                        ["sagrado", "adjective", 2], ["profano", "adjective", 2], ["místico", "adjective", 2],
-                        ["oculto", "adjective", 2], ["manifiesto", "adjective", 2], ["latente", "adjective", 3],
-                        ["explícito", "adjective", 2], ["implícito", "adjective", 2], ["connotativo", "adjective", 3],
-                        ["denotativo", "adjective", 3], ["polisémico", "adjective", 3], ["monosémico", "adjective", 3],
-                        ["sinonímico", "adjective", 3], ["antinómico", "adjective", 3], ["homófono", "noun", 3],
-                        ["homógrafo", "noun", 3], ["parónimo", "noun", 3], ["neologismo", "noun", 3],
-                        ["arcaísmo", "noun", 3], ["regionalismo", "noun", 3], ["barbarismo", "noun", 3],
-                        ["solecismo", "noun", 3], ["pleonasmo", "noun", 3], ["tautología", "noun", 3],
-                        ["eufemismo", "noun", 3], ["oxímoron", "noun", 3], ["antítesis", "noun", 3],
-                        ["silogismo", "noun", 3], ["entimema", "noun", 3], ["dilema", "noun", 3],
-                        ["aforismo", "noun", 3], ["máxima", "noun", 3], ["epigrama", "noun", 3],
-                        ["epitafio", "noun", 3], ["elogio", "noun", 3], ["panegírico", "noun", 3],
-                        ["diatriba", "noun", 3], ["invectiva", "noun", 3], ["panfleto", "noun", 3],
-                        ["sátira", "noun", 3], ["parodia", "noun", 3], ["simulacro", "noun", 3],
-                        ["simulación", "noun", 2], ["disimulación", "noun", 3], ["mimetismo", "noun", 3],
-                        ["camuflaje", "noun", 3], ["biomimetismo", "noun", 3], ["nanotecnología", "noun", 3],
-                        ["biotecnología", "noun", 3], ["cognición", "noun", 3], ["metacognición", "noun", 3],
-                        ["inteligencia", "noun", 1], ["artificial", "adjective", 2], ["inmersivo", "adjective", 3],
-                        ["háptico", "adjective", 3], ["olfativo", "adjective", 3], ["gustativo", "adjective", 3],
-                        ["auditivo", "adjective", 3], ["visual", "adjective", 2], ["cinestésico", "adjective", 3],
-                        ["propioceptivo", "adjective", 3], ["vestibular", "adjective", 3], ["nociceptivo", "adjective", 3],
-                        ["termorreceptivo", "adjective", 3], ["electrorreceptivo", "adjective", 3], ["magnetorreceptivo", "adjective", 3],
-                        ["ecolocalización", "noun", 3], ["electrocepción", "noun", 3], ["magnetorrecepción", "noun", 3],
-                        ["fotorrecepción", "noun", 3], ["quimiorrecepción", "noun", 3], ["mecanorrecepción", "noun", 3],
-                        ["termorrecepción", "noun", 3], ["nocicepción", "noun", 3], ["propiocepción", "noun", 3],
-                        ["interocepcion", "noun", 3], ["exterocepción", "noun", 3], ["sensación", "noun", 2],
-                        ["percepción", "noun", 2], ["apercepción", "noun", 3], ["sinestésico", "adjective", 3],
-                        ["qualia", "noun", 3], ["fenomenología", "noun", 3], ["epistemología", "noun", 3],
-                        ["ontología", "noun", 3], ["axiología", "noun", 3], ["teleología", "noun", 3],
-                        ["deontología", "noun", 3], ["hermenéutica", "noun", 3], ["exégesis", "noun", 3],
-                        ["dialéctica", "noun", 3], ["retórica", "noun", 3], ["sofística", "noun", 3],
-                        ["erística", "noun", 3], ["mayéutica", "noun", 3], ["catarsis", "noun", 3],
-                        ["mímesis", "noun", 3], ["diégesis", "noun", 3], ["fábula", "noun", 3],
-                        ["intriga", "noun", 2], ["peripecia", "noun", 3], ["anagnórisis", "noun", 3],
-                        ["catástrofe", "noun", 2], ["desenlace", "noun", 2], ["epílogo", "noun", 2],
-                        ["prólogo", "noun", 2], ["epifanía", "noun", 3], ["revelación", "noun", 2],
-                        ["iluminación", "noun", 2], ["satori", "noun", 3], ["nirvana", "noun", 3],
-                        ["zenit", "noun", 2], ["apogeo", "noun", 2], ["perigeo", "noun", 3],
-                        ["nadir", "noun", 3], ["clinamen", "noun", 3], ["ápeiron", "noun", 3],
-                        ["pneuma", "noun", 3], ["arjé", "noun", 3], ["cosmos", "noun", 2],
-                        ["caos", "noun", 2], ["negentropía", "noun", 3], ["sinergética", "noun", 3],
-                        ["autopoiesis", "noun", 3], ["emergencia", "noun", 3], ["complejidad", "noun", 2],
-                        ["sencillez", "noun", 2], ["elegante", "adjective", 2], ["refinado", "adjective", 2],
-                        ["sofisticado", "adjective", 2], ["brutal", "adjective", 2], ["salvaje", "adjective", 2],
-                        ["doméstico", "adjective", 2], ["exótico", "adjective", 2], ["banal", "adjective", 2],
-                        ["trivial", "adjective", 2]
-                    ]
-                },
-                "pt": {
-                    name: "Português",
-                    words: [
-                        ["sol", "noun", 1], ["luz", "noun", 1], ["sonho", "noun", 1],
-                        ["paz", "noun", 1], ["floresta", "noun", 2], ["nascente", "noun", 2],
-                        ["palavra", "noun", 1], ["flor", "noun", 1], ["vento", "noun", 1],
-                        ["céu", "noun", 1], ["estrela", "noun", 1], ["montanha", "noun", 1],
-                        ["mar", "noun", 1], ["rio", "noun", 1], ["fogo", "noun", 1],
-                        ["terra", "noun", 1], ["mundo", "noun", 1], ["tempo", "noun", 1],
-                        ["homem", "noun", 1], ["criança", "noun", 1], ["amigo", "noun", 1],
-                        ["amor", "noun", 1], ["alma", "noun", 1], ["pensamento", "noun", 1],
-                        ["desejo", "noun", 2], ["sonhador", "noun", 2], ["viajante", "noun", 2],
-                        ["magia", "noun", 2], ["mistério", "noun", 2], ["eco", "noun", 2],
-                        ["harmonia", "noun", 2], ["liberdade", "noun", 1], ["coragem", "noun", 1],
-                        ["esperança", "noun", 1], ["fé", "noun", 1], ["verdade", "noun", 1],
-                        ["justiça", "noun", 1], ["sabedoria", "noun", 2], ["conhecimento", "noun", 2],
-                        ["infinito", "noun", 3], ["eternidade", "noun", 3], ["metamorfose", "noun", 3],
-                        ["paradoxo", "noun", 3], ["sinestesia", "noun", 3], ["abismo", "noun", 2],
-                        ["oásis", "noun", 2], ["miragem", "noun", 3], ["fascinação", "noun", 2],
-                        ["plenitude", "noun", 3], ["efêmero", "adjective", 3], ["sublime", "adjective", 2],
-                        ["absurdo", "adjective", 2], ["lúcido", "adjective", 2], ["frágil", "adjective", 2],
-                        ["cristalino", "adjective", 2], ["azul", "adjective", 1], ["sereno", "adjective", 1],
-                        ["profundo", "adjective", 1], ["vibrante", "adjective", 2], ["eloquente", "adjective", 3],
-                        ["sintético", "adjective", 3], ["algoritmo", "noun", 2], ["entropia", "noun", 3],
-                        ["quasar", "noun", 3], ["nebulosa", "noun", 2], ["éter", "noun", 2],
-                        ["psique", "noun", 2], ["arquétipo", "noun", 3], ["logos", "noun", 3],
-                        ["ressonância", "noun", 2], ["espectro", "noun", 2], ["sinapse", "noun", 3],
-                        ["neurônio", "noun", 2], ["genoma", "noun", 2], ["ecossistema", "noun", 2],
-                        ["biodiversidade", "noun", 3], ["sustentabilidade", "noun", 3], ["inefável", "adjective", 3],
-                        ["tangível", "adjective", 3], ["volátil", "adjective", 2], ["catártico", "adjective", 3],
-                        ["lírico", "adjective", 2], ["hermético", "adjective", 3], ["esotérico", "adjective", 3],
-                        ["oracular", "adjective", 3], ["cosmogonia", "noun", 3], ["teogonia", "noun", 3],
-                        ["arquitetura", "noun", 2], ["sinfonia", "noun", 2], ["poesia", "noun", 1],
-                        ["voo", "noun", 1], ["alto", "adjective", 1], ["profundo", "adjective", 1],
-                        ["brilhante", "adjective", 1], ["escuro", "adjective", 1], ["quente", "adjective", 1],
-                        ["frio", "adjective", 1], ["doce", "adjective", 1], ["amargo", "adjective", 1],
-                        ["fresco", "adjective", 1], ["velho", "adjective", 1], ["novo", "adjective", 1],
-                        ["rápido", "adjective", 1], ["lento", "adjective", 1], ["belo", "adjective", 1],
-                        ["horrível", "adjective", 2], ["enorme", "adjective", 1], ["minúsculo", "adjective", 1],
-                        ["resplandecente", "adjective", 2], ["puro", "adjective", 1], ["complexo", "adjective", 1],
-                        ["simples", "adjective", 1], ["abstrato", "adjective", 2], ["concreto", "adjective", 2],
-                        ["fictício", "adjective", 2], ["real", "adjective", 1], ["virtual", "adjective", 2],
-                        ["aumentado", "adjective", 3], ["quântico", "adjective", 3], ["relativo", "adjective", 2],
-                        ["absoluto", "adjective", 2], ["binário", "adjective", 3], ["digital", "adjective", 1],
-                        ["analógico", "adjective", 2], ["cibernético", "adjective", 3], ["autônomo", "adjective", 2],
-                        ["sinérgico", "adjective", 3], ["holístico", "adjective", 3], ["fractal", "adjective", 3],
-                        ["recursivo", "adjective", 3], ["iterativo", "adjective", 3], ["estocástico", "adjective", 3],
-                        ["determinístico", "adjective", 3], ["heurístico", "adjective", 3], ["intuitivo", "adjective", 2],
-                        ["racional", "adjective", 2], ["empírico", "adjective", 3], ["pragmático", "adjective", 2],
-                        ["idealista", "adjective", 2], ["materialista", "adjective", 2], ["espiritual", "adjective", 2],
-                        ["sagrado", "adjective", 2], ["profano", "adjective", 2], ["místico", "adjective", 2],
-                        ["oculto", "adjective", 2], ["manifesto", "adjective", 2], ["latente", "adjective", 3],
-                        ["explícito", "adjective", 2], ["implícito", "adjective", 2], ["conotativo", "adjective", 3],
-                        ["denotativo", "adjective", 3], ["polissêmico", "adjective", 3], ["monossêmico", "adjective", 3],
-                        ["sinonímico", "adjective", 3], ["antinômico", "adjective", 3], ["homófono", "noun", 3],
-                        ["homógrafo", "noun", 3], ["parônimo", "noun", 3], ["neologismo", "noun", 3],
-                        ["arcaísmo", "noun", 3], ["regionalismo", "noun", 3], ["barbarismo", "noun", 3],
-                        ["solecismo", "noun", 3], ["pleonasmo", "noun", 3], ["tautologia", "noun", 3],
-                        ["eufemismo", "noun", 3], ["oxímoro", "noun", 3], ["antítese", "noun", 3],
-                        ["silogismo", "noun", 3], ["entimema", "noun", 3], ["dilema", "noun", 3],
-                        ["aforismo", "noun", 3], ["máxima", "noun", 3], ["epigrama", "noun", 3],
-                        ["epitáfio", "noun", 3], ["elogio", "noun", 3], ["panegírico", "noun", 3],
-                        ["diatribe", "noun", 3], ["invectiva", "noun", 3], ["panfleto", "noun", 3],
-                        ["sátira", "noun", 3], ["paródia", "noun", 3], ["simulacro", "noun", 3],
-                        ["simulação", "noun", 2], ["dissimulação", "noun", 3], ["mimetismo", "noun", 3],
-                        ["camuflagem", "noun", 3], ["biomimetismo", "noun", 3], ["nanotecnologia", "noun", 3],
-                        ["biotecnologia", "noun", 3], ["cognição", "noun", 3], ["metacognição", "noun", 3],
-                        ["inteligência", "noun", 1], ["artificial", "adjective", 2], ["imersivo", "adjective", 3],
-                        ["háptico", "adjective", 3], ["olfativo", "adjective", 3], ["gustativo", "adjective", 3],
-                        ["auditivo", "adjective", 3], ["visual", "adjective", 2], ["cinestésico", "adjective", 3],
-                        ["proprioceptivo", "adjective", 3], ["vestibular", "adjective", 3], ["nociceptivo", "adjective", 3],
-                        ["termorreceptivo", "adjective", 3], ["eletrorreceptivo", "adjective", 3], ["magnetorreceptivo", "adjective", 3],
-                        ["ecolocalização", "noun", 3], ["eletrocepção", "noun", 3], ["magnetorrecepção", "noun", 3],
-                        ["fotorrecepção", "noun", 3], ["quimiorrecepção", "noun", 3], ["mecanorrecepção", "noun", 3],
-                        ["termorrecepção", "noun", 3], ["nocicepção", "noun", 3], ["propriocepção", "noun", 3],
-                        ["interocepção", "noun", 3], ["exterocepção", "noun", 3], ["sensação", "noun", 2],
-                        ["percepção", "noun", 2], ["apercepção", "noun", 3], ["sinestésico", "adjective", 3],
-                        ["qualia", "noun", 3], ["fenomenologia", "noun", 3], ["epistemologia", "noun", 3],
-                        ["ontologia", "noun", 3], ["axiologia", "noun", 3], ["teleologia", "noun", 3],
-                        ["deontologia", "noun", 3], ["hermenêutica", "noun", 3], ["exegese", "noun", 3],
-                        ["dialética", "noun", 3], ["retórica", "noun", 3], ["sofística", "noun", 3],
-                        ["erística", "noun", 3], ["maiêutica", "noun", 3], ["catarse", "noun", 3],
-                        ["mimese", "noun", 3], ["diegese", "noun", 3], ["fábula", "noun", 3],
-                        ["intriga", "noun", 2], ["peripécia", "noun", 3], ["anagnórise", "noun", 3],
-                        ["catástrofe", "noun", 2], ["desfecho", "noun", 2], ["epílogo", "noun", 2],
-                        ["prólogo", "noun", 2], ["epifania", "noun", 3], ["revelação", "noun", 2],
-                        ["iluminação", "noun", 2], ["satori", "noun", 3], ["nirvana", "noun", 3],
-                        ["zênite", "noun", 2], ["apogeu", "noun", 2], ["perigeu", "noun", 3],
-                        ["nadir", "noun", 3], ["clinamen", "noun", 3], ["ápeiron", "noun", 3],
-                        ["pneuma", "noun", 3], ["arché", "noun", 3], ["cosmos", "noun", 2],
-                        ["caos", "noun", 2], ["negentropia", "noun", 3], ["sinergética", "noun", 3],
-                        ["autopoiese", "noun", 3], ["emergência", "noun", 3], ["complexidade", "noun", 2],
-                        ["simplicidade", "noun", 2], ["elegante", "adjective", 2], ["refinado", "adjective", 2],
-                        ["sofisticado", "adjective", 2], ["brutal", "adjective", 2], ["selvagem", "adjective", 2],
-                        ["doméstico", "adjective", 2], ["exótico", "adjective", 2], ["banal", "adjective", 2],
-                        ["trivial", "adjective", 2]
-                    ]
-                },
-                "nl": {
-                    name: "Nederlands",
-                    words: [
-                        ["zon", "noun", 1], ["licht", "noun", 1], ["droom", "noun", 1],
-                        ["vrede", "noun", 1], ["bos", "noun", 2], ["bron", "noun", 2],
-                        ["woord", "noun", 1], ["bloem", "noun", 1], ["wind", "noun", 1],
-                        ["hemel", "noun", 1], ["ster", "noun", 1], ["berg", "noun", 1],
-                        ["zee", "noun", 1], ["rivier", "noun", 1], ["vuur", "noun", 1],
-                        ["aarde", "noun", 1], ["wereld", "noun", 1], ["tijd", "noun", 1],
-                        ["mens", "noun", 1], ["kind", "noun", 1], ["vriend", "noun", 1],
-                        ["liefde", "noun", 1], ["ziel", "noun", 1], ["gedachte", "noun", 1],
-                        ["verlangen", "noun", 2], ["dromer", "noun", 2], ["reiziger", "noun", 2],
-                        ["magie", "noun", 2], ["mysterie", "noun", 2], ["echo", "noun", 2],
-                        ["harmonie", "noun", 2], ["vrijheid", "noun", 1], ["moed", "noun", 1],
-                        ["hoop", "noun", 1], ["geloof", "noun", 1], ["waarheid", "noun", 1],
-                        ["gerechtigheid", "noun", 1], ["wijsheid", "noun", 2], ["kennis", "noun", 2],
-                        ["oneindigheid", "noun", 3], ["eeuwigheid", "noun", 3], ["metamorfose", "noun", 3],
-                        ["paradox", "noun", 3], ["synesthesie", "noun", 3], ["afgrond", "noun", 2],
-                        ["oase", "noun", 2], ["luchtspiegeling", "noun", 3], ["fascinatie", "noun", 2],
-                        ["volheid", "noun", 3], ["vergankelijk", "adjective", 3], ["subliem", "adjective", 2],
-                        ["absurd", "adjective", 2], ["lucide", "adjective", 2], ["kwetsbaar", "adjective", 2],
-                        ["kristallijn", "adjective", 2], ["azuurblauw", "adjective", 2], ["sereen", "adjective", 1],
-                        ["diep", "adjective", 1], ["vibrerend", "adjective", 2], ["welbespraakt", "adjective", 3],
-                        ["synthetisch", "adjective", 3], ["algoritme", "noun", 2], ["entropie", "noun", 3],
-                        ["quasar", "noun", 3], ["nevel", "noun", 2], ["ether", "noun", 2],
-                        ["psyche", "noun", 2], ["archetype", "noun", 3], ["logos", "noun", 3],
-                        ["resonantie", "noun", 2], ["spectrum", "noun", 2], ["synaps", "noun", 3],
-                        ["neuron", "noun", 2], ["genoom", "noun", 2], ["ecosysteem", "noun", 2],
-                        ["biodiversiteit", "noun", 3], ["duurzaamheid", "noun", 3], ["onuitsprekelijk", "adjective", 3],
-                        ["tastbaar", "adjective", 3], ["vluchtig", "adjective", 2], ["kathartisch", "adjective", 3],
-                        ["lyrisch", "adjective", 2], ["hermetisch", "adjective", 3], ["esoterisch", "adjective", 3],
-                        ["orakelachtig", "adjective", 3], ["kosmogonie", "noun", 3], ["theogonie", "noun", 3],
-                        ["architectuur", "noun", 2], ["symfonie", "noun", 2], ["poëzie", "noun", 1],
-                        ["vlucht", "noun", 1], ["hoog", "adjective", 1], ["diep", "adjective", 1],
-                        ["helder", "adjective", 1], ["donker", "adjective", 1], ["warm", "adjective", 1],
-                        ["koud", "adjective", 1], ["zoet", "adjective", 1], ["bitter", "adjective", 1],
-                        ["vers", "adjective", 1], ["oud", "adjective", 1], ["nieuw", "adjective", 1],
-                        ["snel", "adjective", 1], ["langzaam", "adjective", 1], ["mooi", "adjective", 1],
-                        ["lelijk", "adjective", 2], ["enorm", "adjective", 1], ["klein", "adjective", 1],
-                        ["schitterend", "adjective", 2], ["puur", "adjective", 1], ["complex", "adjective", 1],
-                        ["eenvoudig", "adjective", 1], ["abstract", "adjective", 2], ["concreet", "adjective", 2],
-                        ["fictief", "adjective", 2], ["echt", "adjective", 1], ["virtueel", "adjective", 2],
-                        ["uitgebreid", "adjective", 3], ["kwantum", "adjective", 3], ["relatief", "adjective", 2],
-                        ["absoluut", "adjective", 2], ["binair", "adjective", 3], ["digitaal", "adjective", 1],
-                        ["analoog", "adjective", 2], ["cybernetisch", "adjective", 3], ["autonoom", "adjective", 2],
-                        ["synergetisch", "adjective", 3], ["holistisch", "adjective", 3], ["fractaal", "adjective", 3],
-                        ["recursief", "adjective", 3], ["iteratief", "adjective", 3], ["stochastisch", "adjective", 3],
-                        ["deterministisch", "adjective", 3], ["heuristisch", "adjective", 3], ["intuïtief", "adjective", 2],
-                        ["rationeel", "adjective", 2], ["empirisch", "adjective", 3], ["pragmatisch", "adjective", 2],
-                        ["idealistisch", "adjective", 2], ["materialistisch", "adjective", 2], ["spiritueel", "adjective", 2],
-                        ["heilig", "adjective", 2], ["profaan", "adjective", 2], ["mystiek", "adjective", 2],
-                        ["occult", "adjective", 2], ["manifest", "adjective", 2], ["latent", "adjective", 3],
-                        ["expliciet", "adjective", 2], ["impliciet", "adjective", 2], ["connotatief", "adjective", 3],
-                        ["denotatief", "adjective", 3], ["polysemisch", "adjective", 3], ["monosemisch", "adjective", 3],
-                        ["synonymisch", "adjective", 3], ["antoniem", "adjective", 3], ["homofoon", "noun", 3],
-                        ["homograaf", "noun", 3], ["paroniem", "noun", 3], ["neologisme", "noun", 3],
-                        ["archaïsme", "noun", 3], ["regionalisme", "noun", 3], ["barbarisme", "noun", 3],
-                        ["solecisme", "noun", 3], ["pleonasme", "noun", 3], ["tautologie", "noun", 3],
-                        ["eufemisme", "noun", 3], ["oxymoron", "noun", 3], ["antithese", "noun", 3],
-                        ["syllogisme", "noun", 3], ["enthymeem", "noun", 3], ["dilemma", "noun", 3],
-                        ["aforisme", "noun", 3], ["maxime", "noun", 3], ["epigram", "noun", 3],
-                        ["epitaaf", "noun", 3], ["lofrede", "noun", 3], ["panegyriek", "noun", 3],
-                        ["diatribe", "noun", 3], ["invectief", "noun", 3], ["pamflet", "noun", 3],
-                        ["satire", "noun", 3], ["parodie", "noun", 3], ["simulacrum", "noun", 3],
-                        ["simulatie", "noun", 2], ["dissimulatie", "noun", 3], ["mimicry", "noun", 3],
-                        ["camouflage", "noun", 3], ["biomimicry", "noun", 3], ["nanotechnologie", "noun", 3],
-                        ["biotechnologie", "noun", 3], ["cognitie", "noun", 3], ["metacognitie", "noun", 3],
-                        ["intelligentie", "noun", 1], ["kunstmatig", "adjective", 2], ["immersief", "adjective", 3],
-                        ["haptisch", "adjective", 3], ["olfactorisch", "adjective", 3], ["gustatief", "adjective", 3],
-                        ["auditief", "adjective", 3], ["visueel", "adjective", 2], ["kinesthetisch", "adjective", 3],
-                        ["proprioceptief", "adjective", 3], ["vestibulair", "adjective", 3], ["nociceptief", "adjective", 3],
-                        ["thermoreceptief", "adjective", 3], ["elektroreceptief", "adjective", 3], ["magnetoreceptief", "adjective", 3],
-                        ["echolocatie", "noun", 3], ["elektroceptie", "noun", 3], ["magnetoreceptie", "noun", 3],
-                        ["fotoreceptie", "noun", 3], ["chemoreceptie", "noun", 3], ["mechanoreceptie", "noun", 3],
-                        ["thermoreceptie", "noun", 3], ["nociceptie", "noun", 3], ["proprioceptie", "noun", 3],
-                        ["interoceptie", "noun", 3], ["exteroceptie", "noun", 3], ["sensatie", "noun", 2],
-                        ["perceptie", "noun", 2], ["apperceptie", "noun", 3], ["synesthetisch", "adjective", 3],
-                        ["qualia", "noun", 3], ["fenomenologie", "noun", 3], ["epistemologie", "noun", 3],
-                        ["ontologie", "noun", 3], ["axiologie", "noun", 3], ["teleologie", "noun", 3],
-                        ["deontologie", "noun", 3], ["hermeneutiek", "noun", 3], ["exegese", "noun", 3],
-                        ["dialectiek", "noun", 3], ["retorica", "noun", 3], ["sofistiek", "noun", 3],
-                        ["eristiek", "noun", 3], ["maieutiek", "noun", 3], ["catharsis", "noun", 3],
-                        ["mimesis", "noun", 3], ["diegesis", "noun", 3], ["fabula", "noun", 3],
-                        ["intrige", "noun", 2], ["peripetie", "noun", 3], ["anagnorisis", "noun", 3],
-                        ["catastrofe", "noun", 2], ["ontknoping", "noun", 2], ["epiloog", "noun", 2],
-                        ["proloog", "noun", 2], ["epifanie", "noun", 3], ["openbaring", "noun", 2],
-                        ["verlichting", "noun", 2], ["satori", "noun", 3], ["nirvana", "noun", 3],
-                        ["zenit", "noun", 2], ["apogeum", "noun", 2], ["perigeum", "noun", 3],
-                        ["nadir", "noun", 3], ["clinamen", "noun", 3], ["apeiron", "noun", 3],
-                        ["pneuma", "noun", 3], ["arche", "noun", 3], ["kosmos", "noun", 2],
-                        ["chaos", "noun", 2], ["negentropie", "noun", 3], ["synergetica", "noun", 3],
-                        ["autopoiese", "noun", 3], ["emergentie", "noun", 3], ["complexiteit", "noun", 2],
-                        ["eenvoud", "noun", 2], ["elegant", "adjective", 2], ["verfijnd", "adjective", 2],
-                        ["verfijnd", "adjective", 2], ["brutaal", "adjective", 2], ["wild", "adjective", 2],
-                        ["gedomesticeerd", "adjective", 2], ["exotisch", "adjective", 2], ["banaal", "adjective", 2],
-                        ["triviaal", "adjective", 2]
-                    ]
-                }
             };
 
             // ============================================================
@@ -1722,54 +1116,12 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                     emptyHistory: "Још нема генерисаних речи...",
                     types: { "noun": "именица", "adjective": "придев" }
                 },
-                "de": {
-                    labelLetters: "Buchstaben", btnText: "WORT GENERIEREN",
-                    filterAll: "Alle", filterShort: "Kurz", filterLong: "Lang", filterRare: "Selten",
-                    labelMax: "Max", historyLabel: "Letzte Wörter", historyHint: "klicken zum Neuladen",
-                    emptyHistory: "Noch keine Wörter generiert...",
-                    types: { "noun": "Substantiv", "adjective": "Adjektiv" }
-                },
-                "fr": {
-                    labelLetters: "lettres", btnText: "GÉNÉRER UN MOT",
-                    filterAll: "Tous", filterShort: "Courts", filterLong: "Longs", filterRare: "Rares",
-                    labelMax: "Max", historyLabel: "Historique récent", historyHint: "cliquez pour recharger",
-                    emptyHistory: "Aucun mot généré pour le moment...",
-                    types: { "noun": "nom", "adjective": "adjectif" }
-                },
-                "it": {
-                    labelLetters: "lettere", btnText: "GENERA PAROLA",
-                    filterAll: "Tutte", filterShort: "Corte", filterLong: "Lunghe", filterRare: "Rare",
-                    labelMax: "Max", historyLabel: "Cronologia recente", historyHint: "clicca per ricaricare",
-                    emptyHistory: "Nessuna parola generata finora...",
-                    types: { "noun": "sostantivo", "adjective": "aggettivo" }
-                },
-                "es": {
-                    labelLetters: "letras", btnText: "GENERAR PALABRA",
-                    filterAll: "Todas", filterShort: "Cortas", filterLong: "Largas", filterRare: "Raras",
-                    labelMax: "Máx", historyLabel: "Historial reciente", historyHint: "clic para recargar",
-                    emptyHistory: "Aún no se han generado palabras...",
-                    types: { "noun": "sustantivo", "adjective": "adjetivo" }
-                },
-                "pt": {
-                    labelLetters: "letras", btnText: "GERAR PALAVRA",
-                    filterAll: "Todas", filterShort: "Curtas", filterLong: "Longas", filterRare: "Raras",
-                    labelMax: "Máx", historyLabel: "Histórico recente", historyHint: "clique para recarregar",
-                    emptyHistory: "Nenhuma palavra gerada ainda...",
-                    types: { "noun": "substantivo", "adjective": "adjetivo" }
-                },
-                "nl": {
-                    labelLetters: "letters", btnText: "WOORD GENEREREN",
-                    filterAll: "Alle", filterShort: "Kort", filterLong: "Lang", filterRare: "Zeldzaam",
-                    labelMax: "Max", historyLabel: "Recente geschiedenis", historyHint: "klik om te herladen",
-                    emptyHistory: "Nog geen woorden gegenereerd...",
-                    types: { "noun": "zelfstandig naamwoord", "adjective": "bijvoeglijk naamwoord" }
-                }
             };
 
             // ============================================================
             //  STATE
             // ============================================================
-            const extraTranslations = {"en": {"title": "Random Word Generator in 10 Languages · LexiGen", "description": "Generate random words in 10 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.", "subtitle": "Random words for writing, language practice and creative ideas.", "theme": "Toggle light/dark theme", "copy": "Copy word", "copied": "Word copied.", "copyError": "Could not copy automatically. Select and copy the word manually.", "noMatch": "No word matches these filters. Increase the maximum length or choose another filter.", "install": "Install app", "privacy": "No account or tracking. Preferences and recent words stay in this browser. “Rare” is a curated list label, not a measured word frequency. Not for passwords or security codes.", "language": "Choose language", "clear": "Clear history", "clearConfirm": "Clear recent history for this language?"}, "ro": {"title": "Generator de cuvinte aleatorii în 10 limbi · LexiGen", "description": "Generează cuvinte aleatorii în 10 limbi. Filtrează după lungime sau raritate editorială, copiază un cuvânt și revino la istoric. Gratuit, privat și disponibil offline.", "subtitle": "Cuvinte aleatorii pentru scris, exersarea limbilor și idei creative.", "theme": "Comută tema light/dark", "copy": "Copiază cuvântul", "copied": "Cuvânt copiat.", "copyError": "Copierea automată nu a reușit. Selectează și copiază manual cuvântul.", "noMatch": "Niciun cuvânt nu corespunde filtrelor. Mărește lungimea maximă sau alege alt filtru.", "install": "Instalează aplicația", "privacy": "Fără cont sau tracking. Preferințele și cuvintele recente rămân în acest browser. „Rar” este o etichetă editorială, nu o frecvență măsurată. Nu folosi pentru parole sau coduri de securitate.", "language": "Alege limba", "clear": "Golește istoricul", "clearConfirm": "Ștergi istoricul recent pentru această limbă?"}, "sr-latn": {"title": "Generator nasumičnih reči na 10 jezika · LexiGen", "description": "Generišite nasumične reči na 10 jezika. Filtrirajte po dužini ili uredničkoj oznaci retkosti, kopirajte reč i pogledajte istoriju. Besplatno, privatno i dostupno van mreže.", "subtitle": "Nasumične reči za pisanje, vežbanje jezika i kreativne ideje.", "theme": "Promeni svetlu/tamnu temu", "copy": "Kopiraj reč", "copied": "Reč je kopirana.", "copyError": "Automatsko kopiranje nije uspelo. Označite i kopirajte reč ručno.", "noMatch": "Nijedna reč ne odgovara filterima. Povećajte maksimalnu dužinu ili izaberite drugi filter.", "install": "Instaliraj aplikaciju", "privacy": "Bez naloga i praćenja. Podešavanja i nedavne reči ostaju u ovom pregledaču. „Retko” je urednička oznaka, ne izmerena učestalost. Nije za lozinke ili bezbednosne kodove.", "language": "Izaberi jezik", "clear": "Obriši istoriju", "clearConfirm": "Obrisati nedavnu istoriju za ovaj jezik?"}, "sr-cyrl": {"title": "Генератор насумичних речи на 10 језика · LexiGen", "description": "Генеришите насумичне речи на 10 језика. Филтрирајте по дужини или уредничкој ознаци реткости, копирајте реч и погледајте историју. Бесплатно, приватно и доступно ван мреже.", "subtitle": "Насумичне речи за писање, вежбање језика и креативне идеје.", "theme": "Промени светлу/тамну тему", "copy": "Копирај реч", "copied": "Реч је копирана.", "copyError": "Аутоматско копирање није успело. Означите и копирајте реч ручно.", "noMatch": "Ниједна реч не одговара филтерима. Повећајте максималну дужину или изаберите други филтер.", "install": "Инсталирај апликацију", "privacy": "Без налога и праћења. Подешавања и недавне речи остају у овом прегледачу. „Ретко” је уредничка ознака, не измерена учесталост. Није за лозинке или безбедносне кодове.", "language": "Изабери језик", "clear": "Обриши историју", "clearConfirm": "Обрисати недавну историју за овај језик?"}, "de": {"title": "Zufallswort-Generator in 10 Sprachen · LexiGen", "description": "Zufällige Wörter in 10 Sprachen generieren. Nach Länge oder redaktioneller Seltenheit filtern, Wörter kopieren und den Verlauf nutzen. Kostenlos, privat und offline nutzbar.", "subtitle": "Zufällige Wörter zum Schreiben, Sprachenlernen und für kreative Ideen.", "theme": "Helles/dunkles Design umschalten", "copy": "Wort kopieren", "copied": "Wort kopiert.", "copyError": "Automatisches Kopieren fehlgeschlagen. Bitte das Wort manuell auswählen und kopieren.", "noMatch": "Kein Wort passt zu diesen Filtern. Maximale Länge erhöhen oder einen anderen Filter wählen.", "install": "App installieren", "privacy": "Kein Konto, kein Tracking. Einstellungen und letzte Wörter bleiben in diesem Browser. „Selten” ist eine redaktionelle Kennzeichnung, keine gemessene Häufigkeit. Nicht für Passwörter oder Sicherheitscodes.", "language": "Sprache wählen", "clear": "Verlauf löschen", "clearConfirm": "Verlauf für diese Sprache löschen?"}, "fr": {"title": "Générateur de mots aléatoires en 10 langues · LexiGen", "description": "Générez des mots aléatoires en 10 langues. Filtrez par longueur ou rareté éditoriale, copiez un mot et consultez l’historique. Gratuit, privé et utilisable hors ligne.", "subtitle": "Des mots aléatoires pour écrire, pratiquer les langues et trouver des idées.", "theme": "Changer le thème clair/sombre", "copy": "Copier le mot", "copied": "Mot copié.", "copyError": "La copie automatique a échoué. Sélectionnez et copiez le mot manuellement.", "noMatch": "Aucun mot ne correspond à ces filtres. Augmentez la longueur maximale ou choisissez un autre filtre.", "install": "Installer l’application", "privacy": "Sans compte ni suivi. Les préférences et mots récents restent dans ce navigateur. « Rare » est une étiquette éditoriale, pas une fréquence mesurée. Pas pour les mots de passe ou codes de sécurité.", "language": "Choisir la langue", "clear": "Effacer l’historique", "clearConfirm": "Effacer l’historique récent pour cette langue ?"}, "it": {"title": "Generatore di parole casuali in 10 lingue · LexiGen", "description": "Genera parole casuali in 10 lingue. Filtra per lunghezza o rarità editoriale, copia una parola e consulta la cronologia. Gratuito, privato e utilizzabile offline.", "subtitle": "Parole casuali per scrivere, esercitare le lingue e trovare idee creative.", "theme": "Cambia tema chiaro/scuro", "copy": "Copia parola", "copied": "Parola copiata.", "copyError": "Copia automatica non riuscita. Seleziona e copia la parola manualmente.", "noMatch": "Nessuna parola corrisponde ai filtri. Aumenta la lunghezza massima o scegli un altro filtro.", "install": "Installa l’app", "privacy": "Nessun account o tracciamento. Preferenze e parole recenti restano in questo browser. “Raro” è un’etichetta editoriale, non una frequenza misurata. Non usare per password o codici di sicurezza.", "language": "Scegli la lingua", "clear": "Cancella cronologia", "clearConfirm": "Cancellare la cronologia recente per questa lingua?"}, "es": {"title": "Generador de palabras aleatorias en 10 idiomas · LexiGen", "description": "Genera palabras aleatorias en 10 idiomas. Filtra por longitud o rareza editorial, copia una palabra y consulta el historial. Gratis, privado y disponible sin conexión.", "subtitle": "Palabras aleatorias para escribir, practicar idiomas y encontrar ideas creativas.", "theme": "Cambiar tema claro/oscuro", "copy": "Copiar palabra", "copied": "Palabra copiada.", "copyError": "No se pudo copiar automáticamente. Selecciona y copia la palabra manualmente.", "noMatch": "Ninguna palabra coincide con los filtros. Aumenta la longitud máxima o elige otro filtro.", "install": "Instalar aplicación", "privacy": "Sin cuenta ni rastreo. Las preferencias y palabras recientes permanecen en este navegador. “Raro” es una etiqueta editorial, no una frecuencia medida. No usar para contraseñas ni códigos de seguridad.", "language": "Elegir idioma", "clear": "Borrar historial", "clearConfirm": "¿Borrar el historial reciente de este idioma?"}, "pt": {"title": "Gerador de palavras aleatórias em 10 idiomas · LexiGen", "description": "Gera palavras aleatórias em 10 idiomas. Filtra por comprimento ou raridade editorial, copia uma palavra e consulta o histórico. Gratuito, privado e disponível offline.", "subtitle": "Palavras aleatórias para escrever, praticar idiomas e encontrar ideias criativas.", "theme": "Alternar tema claro/escuro", "copy": "Copiar palavra", "copied": "Palavra copiada.", "copyError": "Não foi possível copiar automaticamente. Seleciona e copia a palavra manualmente.", "noMatch": "Nenhuma palavra corresponde aos filtros. Aumenta o comprimento máximo ou escolhe outro filtro.", "install": "Instalar aplicação", "privacy": "Sem conta nem rastreamento. Preferências e palavras recentes ficam neste navegador. “Raro” é uma etiqueta editorial, não uma frequência medida. Não usar para palavras-passe ou códigos de segurança.", "language": "Escolher idioma", "clear": "Limpar histórico", "clearConfirm": "Limpar o histórico recente deste idioma?"}, "nl": {"title": "Willekeurige-woordgenerator in 10 talen · LexiGen", "description": "Genereer willekeurige woorden in 10 talen. Filter op lengte of redactionele zeldzaamheid, kopieer woorden en bekijk de geschiedenis. Gratis, privé en offline beschikbaar.", "subtitle": "Willekeurige woorden om te schrijven, talen te oefenen en creatieve ideeën op te doen.", "theme": "Licht/donker thema wisselen", "copy": "Woord kopiëren", "copied": "Woord gekopieerd.", "copyError": "Automatisch kopiëren is mislukt. Selecteer en kopieer het woord handmatig.", "noMatch": "Geen woord voldoet aan de filters. Verhoog de maximale lengte of kies een ander filter.", "install": "App installeren", "privacy": "Geen account of tracking. Voorkeuren en recente woorden blijven in deze browser. “Zeldzaam” is een redactioneel label, geen gemeten frequentie. Niet voor wachtwoorden of beveiligingscodes.", "language": "Taal kiezen", "clear": "Geschiedenis wissen", "clearConfirm": "Recente geschiedenis voor deze taal wissen?"}};
+            const extraTranslations = {"en":{"title":"Random Word Generator in 4 Languages · LexiGen","description":"Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.","subtitle":"Random words for writing, language practice and creative ideas.","theme":"Toggle light/dark theme","copy":"Copy word","copied":"Word copied.","copyError":"Could not copy automatically. Select and copy the word manually.","noMatch":"No word matches these filters. Increase the maximum length or choose another filter.","install":"Install app","privacy":"No account or tracking. Preferences and recent words stay in this browser. “Rare” is a curated list label, not a measured word frequency. Not for passwords or security codes.","language":"Choose language","clear":"Clear history","clearConfirm":"Clear recent history for this language?"},"ro":{"title":"Generator de cuvinte aleatorii în 4 limbi · LexiGen","description":"Generează cuvinte aleatorii în 4 limbi. Filtrează după lungime sau raritate editorială, copiază un cuvânt și revino la istoric. Gratuit, privat și disponibil offline.","subtitle":"Cuvinte aleatorii pentru scris, exersarea limbilor și idei creative.","theme":"Comută tema light/dark","copy":"Copiază cuvântul","copied":"Cuvânt copiat.","copyError":"Copierea automată nu a reușit. Selectează și copiază manual cuvântul.","noMatch":"Niciun cuvânt nu corespunde filtrelor. Mărește lungimea maximă sau alege alt filtru.","install":"Instalează aplicația","privacy":"Fără cont sau tracking. Preferințele și cuvintele recente rămân în acest browser. „Rar” este o etichetă editorială, nu o frecvență măsurată. Nu folosi pentru parole sau coduri de securitate.","language":"Alege limba","clear":"Golește istoricul","clearConfirm":"Ștergi istoricul recent pentru această limbă?"},"sr-latn":{"title":"Generator nasumičnih reči na 4 jezika · LexiGen","description":"Generišite nasumične reči na 4 jezika. Filtrirajte po dužini ili uredničkoj oznaci retkosti, kopirajte reč i pogledajte istoriju. Besplatno, privatno i dostupno van mreže.","subtitle":"Nasumične reči za pisanje, vežbanje jezika i kreativne ideje.","theme":"Promeni svetlu/tamnu temu","copy":"Kopiraj reč","copied":"Reč je kopirana.","copyError":"Automatsko kopiranje nije uspelo. Označite i kopirajte reč ručno.","noMatch":"Nijedna reč ne odgovara filterima. Povećajte maksimalnu dužinu ili izaberite drugi filter.","install":"Instaliraj aplikaciju","privacy":"Bez naloga i praćenja. Podešavanja i nedavne reči ostaju u ovom pregledaču. „Retko” je urednička oznaka, ne izmerena učestalost. Nije za lozinke ili bezbednosne kodove.","language":"Izaberi jezik","clear":"Obriši istoriju","clearConfirm":"Obrisati nedavnu istoriju za ovaj jezik?"},"sr-cyrl":{"title":"Генератор насумичних речи на 4 језика · LexiGen","description":"Генеришите насумичне речи на 4 језика. Филтрирајте по дужини или уредничкој ознаци реткости, копирајте реч и погледајте историју. Бесплатно, приватно и доступно ван мреже.","subtitle":"Насумичне речи за писање, вежбање језика и креативне идеје.","theme":"Промени светлу/тамну тему","copy":"Копирај реч","copied":"Реч је копирана.","copyError":"Аутоматско копирање није успело. Означите и копирајте реч ручно.","noMatch":"Ниједна реч не одговара филтерима. Повећајте максималну дужину или изаберите други филтер.","install":"Инсталирај апликацију","privacy":"Без налога и праћења. Подешавања и недавне речи остају у овом прегледачу. „Ретко” је уредничка ознака, не измерена учесталост. Није за лозинке или безбедносне кодове.","language":"Изабери језик","clear":"Обриши историју","clearConfirm":"Обрисати недавну историју за овај језик?"}};
 
             let currentLang = "en";
             let currentFilter = "all";
@@ -1850,7 +1202,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                 for (const key of ['og:description','twitter:description']) document.querySelector(`meta[${key.startsWith('og:') ? 'property' : 'name'}="${key}"]`).content = t.description;
                 document.querySelector('meta[property="og:url"]').content = languageUrl();
                 document.getElementById('canonicalLink').href = languageUrl();
-                const locales = {en:'en_US',ro:'ro_RO','sr-latn':'sr_RS','sr-cyrl':'sr_RS',de:'de_DE',fr:'fr_FR',it:'it_IT',es:'es_ES',pt:'pt_PT',nl:'nl_NL'};
+                const locales = {en:'en_US',ro:'ro_RO','sr-latn':'sr_RS','sr-cyrl':'sr_RS'};
                 document.querySelector('meta[property="og:locale"]').content = locales[currentLang];
                 const schema = JSON.parse(document.getElementById('appSchema').textContent);
                 schema.description = t.description; schema.url = languageUrl();
@@ -1917,7 +1269,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                 });
             }
 
-            const supportTranslations = {"en": {"donate": "☕ Buy me a coffee?", "source": "Source code"}, "ro": {"donate": "☕ Merit o cafeluță?", "source": "Cod sursă"}, "sr-latn": {"donate": "☕ Zaslužujem kafu?", "source": "Izvorni kod"}, "sr-cyrl": {"donate": "☕ Заслужујем кафу?", "source": "Изворни код"}, "de": {"donate": "☕ Spendierst du mir einen Kaffee?", "source": "Quellcode"}, "fr": {"donate": "☕ Tu m’offres un café ?", "source": "Code source"}, "it": {"donate": "☕ Mi offri un caffè?", "source": "Codice sorgente"}, "es": {"donate": "☕ ¿Me invitas a un café?", "source": "Código fuente"}, "pt": {"donate": "☕ Ofereces-me um café?", "source": "Código-fonte"}, "nl": {"donate": "☕ Trakteer je me op koffie?", "source": "Broncode"}};
+            const supportTranslations = {"en":{"donate":"☕ Buy me a coffee?","source":"Source code"},"ro":{"donate":"☕ Merit o cafeluță?","source":"Cod sursă"},"sr-latn":{"donate":"☕ Zaslužujem kafu?","source":"Izvorni kod"},"sr-cyrl":{"donate":"☕ Заслужујем кафу?","source":"Изворни код"}};
 
             function updateUILanguage() {
                 const support = supportTranslations[currentLang] || supportTranslations.en;
@@ -1951,9 +1303,7 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
                     if (emptyEl) emptyEl.textContent = t.emptyHistory;
                 }
                 const bodyClasses = {
-                    'sr-cyrl': 'lang-sr-cyrl', 'de': 'lang-de', 'fr': 'lang-fr',
-                    'it': 'lang-it', 'es': 'lang-es', 'pt': 'lang-pt', 'nl': 'lang-nl'
-                };
+                    'sr-cyrl': 'lang-sr-cyrl',                 };
                 document.body.className = bodyClasses[currentLang] || '';
             }
 
