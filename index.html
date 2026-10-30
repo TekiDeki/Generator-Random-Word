@@ -5,6 +5,8 @@ Copyright 2026 Kristian Mario Mišković (TekiDeki).
 Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe persistent history. -->
 <head>
     <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob: data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
+<!-- CSP prin meta: GitHub Pages nu permite antete HTTP. Fara frame-ancestors/form-action, pe care meta nu le accepta. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Random Word Generator in 4 Languages · LexiGen</title>
     <meta name="description" content="Generate random words in 4 languages. Filter by length or curated rarity, copy a word and revisit recent history. Free, private and offline-ready.">
