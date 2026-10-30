@@ -599,7 +599,15 @@ Modified 2026-10-14: SEO, local assets, PWA, theme, strict filters and safe pers
         :focus-visible { outline:3px solid var(--lx-accent); outline-offset:4px; }
         @media(max-width:550px) { body, body[class] { padding:12px; } .glass-panel { padding:22px 14px 28px; } .word-container { padding:36px 14px; } .settings-grid { padding:12px; } .toggle-option { padding:10px 12px; } }
         @media(prefers-reduced-motion:reduce) { *, *::before, *::after { transition:none!important; animation:none!important; scroll-behavior:auto!important; } }
-    </style>
+    
+
+
+  /* regula casei: tinte de atingere pe mobil */
+  @media (pointer: coarse), (max-width: 700px) {
+    a:not(:where(p, li, figcaption) a) { min-height: 34px; display: inline-flex; align-items: center; }
+    #tekideki-source { min-height: 34px; display: inline-flex; align-items: center; }
+  }
+</style>
 </head>
 <body>
     <main class="glass-panel" id="app">
